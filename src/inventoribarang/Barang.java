@@ -392,8 +392,8 @@ private DefaultTableModel tabmode;
     }//GEN-LAST:event_bubahActionPerformed
 
     private void bsimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsimpanActionPerformed
-    
-        if ( kd.getText().isEmpty() || nm.getText().isEmpty() || mrk.getText().isEmpty() ){
+    Object s = cbKB.getSelectedItem();
+        if ( kd.getText().isEmpty() || nm.getText().isEmpty() || mrk.getText().isEmpty()|| s ==null){
           JOptionPane.showMessageDialog(this,"Semua Kolom Harus Diisi", "Validasi", JOptionPane.ERROR_MESSAGE);
           return;
         }
